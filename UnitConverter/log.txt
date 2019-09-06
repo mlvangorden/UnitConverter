@@ -1,0 +1,155 @@
+commit c54ef1f2819b20a28d1daa0a491959622879e902
+Author: Matthew Van Gorden <33157785+mlvangorden@users.noreply.github.com>
+Date:   Fri Sep 6 10:33:49 2019 -0400
+
+    final
+
+ UnitConverter/.idea/vcs.xml | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+commit c97b0519cd6ba12b617c661c8a442e8751917aa3
+Author: Matthew Van Gorden <33157785+mlvangorden@users.noreply.github.com>
+Date:   Fri Sep 6 10:23:36 2019 -0400
+
+    Lets hope this works
+
+ .gitignore                                         |  14 +
+ UnitConverter/.idea/.name                          |   1 +
+ .../.idea/caches/build_file_checksums.ser          | Bin 0 -> 541 bytes
+ UnitConverter/.idea/caches/gradle_models.ser       | Bin 0 -> 155862 bytes
+ UnitConverter/.idea/codeStyles/Project.xml         | 116 +++++
+ UnitConverter/.idea/gradle.xml                     |  16 +
+ ...e__androidx_annotation_annotation_1_0_0_jar.xml |  13 +
+ ...dle__androidx_appcompat_appcompat_1_0_2_aar.xml |  15 +
+ ...e__androidx_arch_core_core_common_2_0_0_jar.xml |  11 +
+ ...__androidx_arch_core_core_runtime_2_0_0_aar.xml |  12 +
+ ...ayoutinflater_asynclayoutinflater_1_0_0_aar.xml |  12 +
+ ...radle__androidx_cardview_cardview_1_0_0_aar.xml |  12 +
+ ...e__androidx_collection_collection_1_0_0_jar.xml |  11 +
+ ...constraintlayout_constraintlayout_1_1_3_aar.xml |  10 +
+ ...intlayout_constraintlayout_solver_1_1_3_jar.xml |   9 +
+ ...ordinatorlayout_coordinatorlayout_1_0_0_aar.xml |  15 +
+ .../Gradle__androidx_core_core_1_0_1_aar.xml       |  15 +
+ ...roidx_cursoradapter_cursoradapter_1_0_0_aar.xml |  12 +
+ ...e__androidx_customview_customview_1_0_0_aar.xml |  12 +
+ ...ndroidx_documentfile_documentfile_1_0_0_aar.xml |  12 +
+ ...ndroidx_drawerlayout_drawerlayout_1_0_0_aar.xml |  15 +
+ ...radle__androidx_fragment_fragment_1_0_0_aar.xml |  15 +
+ ...ndroidx_interpolator_interpolator_1_0_0_aar.xml |  12 +
+ ...idx_legacy_legacy_support_core_ui_1_0_0_aar.xml |  12 +
+ ..._legacy_legacy_support_core_utils_1_0_0_aar.xml |  12 +
+ ...droidx_lifecycle_lifecycle_common_2_0_0_jar.xml |  11 +
+ ...oidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml |  12 +
+ ...lifecycle_lifecycle_livedata_core_2_0_0_aar.xml |  12 +
+ ...roidx_lifecycle_lifecycle_runtime_2_0_0_aar.xml |  12 +
+ ...idx_lifecycle_lifecycle_viewmodel_2_0_0_aar.xml |  12 +
+ .../Gradle__androidx_loader_loader_1_0_0_aar.xml   |  12 +
+ ...castmanager_localbroadcastmanager_1_0_0_aar.xml |  12 +
+ .../Gradle__androidx_print_print_1_0_0_aar.xml     |  15 +
+ ...ndroidx_recyclerview_recyclerview_1_0_0_aar.xml |  15 +
+ ...idingpanelayout_slidingpanelayout_1_0_0_aar.xml |  12 +
+ ...erefreshlayout_swiperefreshlayout_1_0_0_aar.xml |  15 +
+ ...roidx_test_espresso_espresso_core_3_1_1_aar.xml |  14 +
+ ...espresso_espresso_idling_resource_3_1_1_aar.xml |  14 +
+ .../Gradle__androidx_test_monitor_1_1_1_aar.xml    |  14 +
+ .../Gradle__androidx_test_runner_1_1_1_aar.xml     |  14 +
+ ...e__androidx_transition_transition_1_0_0_aar.xml |  15 +
+ ...idx_vectordrawable_vectordrawable_1_0_1_aar.xml |  12 +
+ ...rdrawable_vectordrawable_animated_1_0_0_aar.xml |  12 +
+ ...nedparcelable_versionedparcelable_1_0_0_aar.xml |  12 +
+ ...dle__androidx_viewpager_viewpager_1_0_0_aar.xml |  12 +
+ ..._google_android_material_material_1_0_0_aar.xml |  13 +
+ ...__com_google_code_findbugs_jsr305_2_0_1_jar.xml |   9 +
+ .../Gradle__com_squareup_javawriter_2_1_1_jar.xml  |  13 +
+ .../Gradle__javax_inject_javax_inject_1_jar.xml    |  13 +
+ .../libraries/Gradle__junit_junit_4_12_jar.xml     |  13 +
+ .../Gradle__net_sf_kxml_kxml2_2_3_0_jar.xml        |  13 +
+ .../Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml |  13 +
+ ...__org_hamcrest_hamcrest_integration_1_3_jar.xml |  13 +
+ ...adle__org_hamcrest_hamcrest_library_1_3_jar.xml |  13 +
+ UnitConverter/.idea/misc.xml                       |   9 +
+ UnitConverter/.idea/modules.xml                    |   9 +
+ UnitConverter/.idea/runConfigurations.xml          |  12 +
+ UnitConverter/.idea/workspace.xml                  | 295 ++++++++++++
+ UnitConverter/README.md                            |   1 +
+ UnitConverter/app/.gitignore                       |   1 +
+ UnitConverter/app/build.gradle                     |  30 ++
+ UnitConverter/app/proguard-rules.pro               |  21 +
+ .../unitconverter/ExampleInstrumentedTest.java     |  27 ++
+ UnitConverter/app/src/main/AndroidManifest.xml     |  24 +
+ .../com/example/unitconverter/MainActivity.java    | 499 +++++++++++++++++++++
+ .../res/drawable-v24/ic_launcher_foreground.xml    |  34 ++
+ .../app/src/main/res/drawable/blastoise.png        | Bin 0 -> 755272 bytes
+ .../app/src/main/res/drawable/blastoise_m.png      | Bin 0 -> 919763 bytes
+ .../app/src/main/res/drawable/bulbasaur.png        | Bin 0 -> 55695 bytes
+ UnitConverter/app/src/main/res/drawable/candy2.png | Bin 0 -> 6768 bytes
+ .../app/src/main/res/drawable/charizard.png        | Bin 0 -> 705259 bytes
+ .../app/src/main/res/drawable/charizard_m.png      | Bin 0 -> 829081 bytes
+ .../app/src/main/res/drawable/charmander.png       | Bin 0 -> 41055 bytes
+ .../app/src/main/res/drawable/charmeleon.png       | Bin 0 -> 51466 bytes
+ UnitConverter/app/src/main/res/drawable/dark.png   | Bin 0 -> 5930 bytes
+ .../app/src/main/res/drawable/duskball.png         | Bin 0 -> 44829 bytes
+ .../app/src/main/res/drawable/duskball_open.png    | Bin 0 -> 44745 bytes
+ UnitConverter/app/src/main/res/drawable/fire.png   | Bin 0 -> 5778 bytes
+ UnitConverter/app/src/main/res/drawable/grass.png  | Bin 0 -> 5271 bytes
+ .../app/src/main/res/drawable/houndoom.png         | Bin 0 -> 50422 bytes
+ .../app/src/main/res/drawable/houndoom_m.png       | Bin 0 -> 93802 bytes
+ .../app/src/main/res/drawable/houndour.png         | Bin 0 -> 35393 bytes
+ .../main/res/drawable/ic_launcher_background.xml   | 170 +++++++
+ .../app/src/main/res/drawable/ivysaur.png          | Bin 0 -> 76859 bytes
+ UnitConverter/app/src/main/res/drawable/mega.png   | Bin 0 -> 2598 bytes
+ .../app/src/main/res/drawable/pokeball.png         | Bin 0 -> 30667 bytes
+ .../app/src/main/res/drawable/pokeball_open.png    | Bin 0 -> 37914 bytes
+ .../app/src/main/res/drawable/rare_candy.png       | Bin 0 -> 5026 bytes
+ .../app/src/main/res/drawable/squirtle.png         | Bin 0 -> 45225 bytes
+ .../app/src/main/res/drawable/substitute.png       | Bin 0 -> 7746 bytes
+ .../app/src/main/res/drawable/venusaur.png         | Bin 0 -> 909479 bytes
+ .../app/src/main/res/drawable/venusaur_m.png       | Bin 0 -> 1115459 bytes
+ .../app/src/main/res/drawable/wartortle.png        | Bin 0 -> 64650 bytes
+ UnitConverter/app/src/main/res/drawable/water.png  | Bin 0 -> 5763 bytes
+ .../app/src/main/res/layout/activity_main.xml      | 165 +++++++
+ .../app/src/main/res/layout/content_main.xml       |  23 +
+ UnitConverter/app/src/main/res/menu/menu_main.xml  |  10 +
+ .../src/main/res/mipmap-anydpi-v26/ic_launcher.xml |   5 +
+ .../res/mipmap-anydpi-v26/ic_launcher_round.xml    |   5 +
+ .../app/src/main/res/mipmap-hdpi/ic_launcher.png   | Bin 0 -> 2963 bytes
+ .../src/main/res/mipmap-hdpi/ic_launcher_round.png | Bin 0 -> 4905 bytes
+ .../app/src/main/res/mipmap-mdpi/ic_launcher.png   | Bin 0 -> 2060 bytes
+ .../src/main/res/mipmap-mdpi/ic_launcher_round.png | Bin 0 -> 2783 bytes
+ .../app/src/main/res/mipmap-xhdpi/ic_launcher.png  | Bin 0 -> 4490 bytes
+ .../main/res/mipmap-xhdpi/ic_launcher_round.png    | Bin 0 -> 6895 bytes
+ .../app/src/main/res/mipmap-xxhdpi/ic_launcher.png | Bin 0 -> 6387 bytes
+ .../main/res/mipmap-xxhdpi/ic_launcher_round.png   | Bin 0 -> 10413 bytes
+ .../src/main/res/mipmap-xxxhdpi/ic_launcher.png    | Bin 0 -> 9128 bytes
+ .../main/res/mipmap-xxxhdpi/ic_launcher_round.png  | Bin 0 -> 15132 bytes
+ UnitConverter/app/src/main/res/raw/blastoise.mp3   | Bin 0 -> 9613 bytes
+ UnitConverter/app/src/main/res/raw/blastoise_m.mp3 | Bin 0 -> 13374 bytes
+ UnitConverter/app/src/main/res/raw/bulbasaur.mp3   | Bin 0 -> 7523 bytes
+ UnitConverter/app/src/main/res/raw/charizard.mp3   | Bin 0 -> 8777 bytes
+ UnitConverter/app/src/main/res/raw/charizard_m.mp3 | Bin 0 -> 12747 bytes
+ UnitConverter/app/src/main/res/raw/charmander.mp3  | Bin 0 -> 6478 bytes
+ UnitConverter/app/src/main/res/raw/charmeleon.mp3  | Bin 0 -> 8568 bytes
+ UnitConverter/app/src/main/res/raw/fanfare.mp3     | Bin 0 -> 114452 bytes
+ UnitConverter/app/src/main/res/raw/houndoom.mp3    | Bin 0 -> 9195 bytes
+ UnitConverter/app/src/main/res/raw/houndoom_m.mp3  | Bin 0 -> 15046 bytes
+ UnitConverter/app/src/main/res/raw/houndour.mp3    | Bin 0 -> 6478 bytes
+ UnitConverter/app/src/main/res/raw/ivysaur.mp3     | Bin 0 -> 7523 bytes
+ UnitConverter/app/src/main/res/raw/secret.mp3      | Bin 0 -> 187019 bytes
+ UnitConverter/app/src/main/res/raw/squirtle.mp3    | Bin 0 -> 7523 bytes
+ UnitConverter/app/src/main/res/raw/venusaur.mp3    | Bin 0 -> 9195 bytes
+ UnitConverter/app/src/main/res/raw/venusaur_m.mp3  | Bin 0 -> 13165 bytes
+ UnitConverter/app/src/main/res/raw/wartortle.mp3   | Bin 0 -> 8150 bytes
+ UnitConverter/app/src/main/res/values/colors.xml   |   6 +
+ UnitConverter/app/src/main/res/values/dimens.xml   |   5 +
+ UnitConverter/app/src/main/res/values/strings.xml  |  20 +
+ UnitConverter/app/src/main/res/values/styles.xml   |  20 +
+ .../com/example/unitconverter/ExampleUnitTest.java |  17 +
+ UnitConverter/build.gradle                         |  27 ++
+ UnitConverter/gradle.properties                    |  20 +
+ UnitConverter/gradle/wrapper/gradle-wrapper.jar    | Bin 0 -> 54329 bytes
+ .../gradle/wrapper/gradle-wrapper.properties       |   6 +
+ UnitConverter/gradlew                              | 172 +++++++
+ UnitConverter/gradlew.bat                          |  84 ++++
+ UnitConverter/local.properties                     |  10 +
+ UnitConverter/settings.gradle                      |   2 +
+ 139 files changed, 2485 insertions(+)
