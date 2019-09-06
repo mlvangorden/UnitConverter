@@ -1,3 +1,24 @@
+commit 8618287727c606317df5a506f392533ed52f54e8
+Author: Matthew Van Gorden <33157785+mlvangorden@users.noreply.github.com>
+Date:   Fri Sep 6 13:54:23 2019 -0400
+
+    updated readme and log
+
+ .../.idea/caches/build_file_checksums.ser          | Bin 541 -> 541 bytes
+ UnitConverter/.idea/caches/gradle_models.ser       | Bin 155862 -> 156564 bytes
+ UnitConverter/.idea/workspace.xml                  |  50 ++++---
+ UnitConverter/log.txt                              | 155 +++++++++++++++++++++
+ 4 files changed, 182 insertions(+), 23 deletions(-)
+
+commit dfbc4d097b6e8da9969c8613880571c5015eb495
+Author: mlvangorden <33157785+mlvangorden@users.noreply.github.com>
+Date:   Fri Sep 6 10:42:15 2019 -0400
+
+    Update README.md
+
+ UnitConverter/README.md | 3 +++
+ 1 file changed, 3 insertions(+)
+
 commit c54ef1f2819b20a28d1daa0a491959622879e902
 Author: Matthew Van Gorden <33157785+mlvangorden@users.noreply.github.com>
 Date:   Fri Sep 6 10:33:49 2019 -0400
