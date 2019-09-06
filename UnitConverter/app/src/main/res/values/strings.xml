@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Select a Poké Ball</string>
+    <string name="action_settings">Reset</string>
+    <string name="button_icon_desc">First Pokéball</string>
+    <string name="candy">Increment Level</string>
+    <string name="species">\???</string>
+    <string name="level">\LVL ???</string>
+    <string name="grass1">\BULBASAUR</string>
+    <string name="grass2">\IVYSAUR</string>
+    <string name="grass3">\VENUSAUR</string>
+    <string name="fire1">\CHARMANDER</string>
+    <string name="fire2">\CHARMELEON</string>
+    <string name="fire3">\CHARIZARD</string>
+    <string name="water1">\SQUIRTLE</string>
+    <string name="water2">\WARTORTLE</string>
+    <string name="water3">\BLASTOISE</string>
+    <string name="dark1">\HOUNDOUR</string>
+    <string name="dark2">\HOUNDOOM</string>
+
+</resources>

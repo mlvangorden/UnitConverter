@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_main" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/first_pokeball"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="@dimen/poke_margin_right"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="@string/button_icon_desc"
+            android:scaleType="centerInside"
+            android:src="@drawable/pokeball"
+            app:layout_anchor="@+id/linearLayout"
+            app:layout_anchorGravity="center|start"/>
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/second_pokeball"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_margin="@dimen/poke_margin_right"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:contentDescription="@string/button_icon_desc"
+        android:scaleType="centerInside"
+        android:src="@drawable/pokeball"
+        app:layout_anchor="@+id/linearLayout"
+        app:layout_anchorGravity="center"/>
+
+    <ImageButton
+        android:id="@+id/third_pokeball"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_margin="@dimen/poke_margin_right"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:contentDescription="@string/button_icon_desc"
+        android:scaleType="centerInside"
+        android:src="@drawable/pokeball"
+        app:layout_anchor="@+id/linearLayout"
+        app:layout_anchorGravity="center|end"/>
+
+    <ImageButton
+        android:id="@+id/pokemon"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center|center"
+        android:layout_margin="@dimen/fab_margin"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:contentDescription="@string/button_icon_desc"
+        android:scaleType="centerInside"
+        android:src="@drawable/substitute"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center" />
+
+    <ImageButton
+        android:id="@+id/candy"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|start"
+        android:scaleType="centerInside"
+        android:layout_margin="@dimen/poke_margin_right"
+        android:background="@null"
+        android:src="@drawable/candy2"
+        android:contentDescription="@string/candy" />
+
+    <TextView
+        android:id="@+id/species"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/species"
+        android:layout_marginBottom="@dimen/fab_margin"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="bottom|center" />
+
+    <TextView
+        android:id="@+id/level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/level"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="bottom|end"/>
+
+    <ImageButton
+        android:id="@+id/fourth_pokeball"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="@dimen/poke_margin_right"
+        android:layout_marginRight="@dimen/poke_margin_right"
+        android:layout_marginBottom="@dimen/poke_margin_bottom"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:contentDescription="@string/button_icon_desc"
+        android:scaleType="centerInside"
+        android:src="@drawable/duskball"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="bottom|end"
+        android:visibility="invisible"/>
+
+    <ImageButton
+        android:id="@+id/mega"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="@dimen/poke_margin_right"
+        android:layout_marginRight="@dimen/poke_margin_right"
+        android:layout_marginBottom="@dimen/poke_margin_bottom"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:contentDescription="@string/button_icon_desc"
+        android:scaleType="centerInside"
+        android:src="@drawable/mega"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="bottom|center"
+        android:visibility="invisible"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>
